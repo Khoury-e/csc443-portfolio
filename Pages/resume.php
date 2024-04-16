@@ -1,4 +1,12 @@
 <html>
+    <?php 
+    session_start();
+    if(!isset($_SESSION['user'])) {
+        echo "Must be Logged In to access this page";
+        die();
+    }
+
+    ?>
     <head>
         <link rel="stylesheet" href="../CSS/main-style.css" />
         <link rel="stylesheet" href="../CSS/custom-icons.css">
@@ -37,7 +45,6 @@
           <div class="welcome">
             <span>
               <?php 
-                session_start();
                 echo "Welcome, ".$_SESSION['user']."!";
               ?>
             </span>
