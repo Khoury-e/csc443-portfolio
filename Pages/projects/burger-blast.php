@@ -1,5 +1,11 @@
 <html>
-
+    <?php 
+        session_start();
+        if(!isset($_SESSION['user'])) {
+        echo "Must be logged in to access this page";
+        die();
+        }
+    ?>
 <head>
     <link rel="stylesheet" href="../../CSS/main-style.css">
     <link rel="stylesheet" href="../../CSS/gallery.css">
@@ -56,6 +62,18 @@
                         <a href="../contact.php">Contact Me</a>
                     </li>
                 </ul>
+            </div>
+        </div>
+        <div class="end">
+            <div class="welcome">
+                <span>
+                    <?php 
+                        echo "Welcome, ".$_SESSION['user']."!";
+                    ?>
+                </span>
+            </div>
+            <div class="logout">  
+                <span><a href="../../Backend/logout.php"><i class='ico logout-i'></i></a></span>
             </div>
         </div>
     </div>
