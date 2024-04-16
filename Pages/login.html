@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/main-style.css">
+        <link rel="stylesheet" href="../CSS/forms.css">
+        <link rel="stylesheet" href="../CSS/custom-icons.css">
+        <title>
+            Personal  Portfolio: Login
+        </title>
+    </head>
+    <body>
+        <div class="home">
+            <div class="ek-custom-form">
+                <form name="login-form" method="post" action="../Backend/login.php">
+                    <div class="ek-form-title">
+                        Login
+                    </div>
+                    
+                    <div class="ek-form-el">
+                        <div class="ek-label">
+                            <label>Username:</label>
+                        </div>
+                        <div class="ek-input-txt">
+                            <input type="text" name="username">
+                        </div>
+                    </div>
+                    <div class="ek-form-el">
+                        <div class="ek-label">
+                            <label>Password:</label>
+                        </div>
+                        <div class="ek-input-txt">
+                            <input type="password" name="password">
+                        </div>
+                    </div>
+
+                    <div class="ek-form-el">
+                        <div class="ek-form-submit">
+                            <button type="button" onclick="login()">Log In</button>
+                        </div>
+                    </div>
+
+                    <div class="ek-form-el">
+                        <div class="ek-form-cancel">
+                            <button type="button" onclick="cancel()">Cancel</button>
+                        </div>
+                    </div>
+                    
+                    <p>No Account With Us? <a href="../Pages/signup.html">Sign Up</a></p>
+                </form>
+            </div>  
+        </div>
+
+        <script>
+            function login() {
+                let form = document.querySelector('form[name="login-form"]');
+                let username = form.elements['username'].value;
+                let password = form.elements['password'].value;
+
+                if(username=="" || password=="") {
+                    alert("Empty Username Or Password");
+                } else {
+                    form.submit();
+                }
+                
+            }
+
+            function cancel() {
+                let form = document.querySelector('form[name="login-form"]');
+                form.elements['username'].value = "";
+                form.elements['password'].value = "";
+            }
+        </script>
+    </body>
+</html>

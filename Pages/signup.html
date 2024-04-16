@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/main-style.css">
+        <link rel="stylesheet" href="../css/forms.css">
+        <title>
+            Personal Portfolio: New Account
+        </title>
+    </head>
+    <body>
+        <div class="home">
+            <div class="ek-custom-form">
+                <form method="post" action="../Backend/signup.php" name="signup-form">
+                    <span class="ek-form-title">
+                        Sign Up
+                    </span>
+
+                    <div class="ek-form-el">
+                        <div class="ek-label">
+                            <label>Username:</label>
+                        </div>
+                        <div class="ek-input-txt">
+                            <input id="username" type="text" name="username">
+                        </div>
+                    </div>
+
+                    <div class="ek-form-el">
+                        <div class="ek-label">
+                            <label>Full Name:</label>
+                        </div>
+                        <div class="ek-input-txt">
+                            <input id="fullname" type="text" name="fullname">
+                        </div>
+                    </div>
+
+
+                    <div class="ek-form-el">
+                        <div class="ek-label">
+                            <label>Password:</label>
+                        </div>
+                        <div class="ek-input-txt">
+                            <input id="password" type="password" name="password">
+                        </div>
+                    </div>
+
+                    <div class="ek-form-el">
+                        <div class="ek-label">
+                            <label>Confirm Password:</label>
+                        </div>
+                        <div class="ek-input-txt">
+                            <input id="confirmPass" type="password" name="confirm">
+                        </div>
+                    </div>
+
+                    <div class="ek-form-el">
+                        <div class="ek-label">
+                            <label>DOB:</label>
+                        </div>
+                        <div class="ek-input-txt">
+                            <input id="dob" type="date" name="dob">
+                        </div>
+                    </div>
+
+                    <div class="ek-form-el">
+                        <div class="ek-label">
+                            <label>Sex:</label>
+                        </div>
+                        <div>
+                            <div class="ek-input-radio">
+                                <input type="radio" id="sex-male" name="sex" value="M">
+                                <label for="sex-male">Male</label>
+                            </div>
+                            <div class="ek-input-radio">
+                                <input type="radio" id="sex-female" name="sex" value="F">
+                                <label for="sex-female">Female</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="ek-form-el">
+                        <div class="ek-form-submit">
+                            <button type="button" onclick="registerAccount()">Sign Up</button>
+                        </div>
+                    </div>
+
+                    <div class="ek-form-el">
+                        <div class="ek-form-cancel">
+                            <button type="button" onclick="cancel()">Cancel</button>
+                        </div>
+                    </div>
+
+                    <p>Already Have An Account? <a href="../Pages/login.html">Sign In</a> With Your Account</p>
+
+                </form>
+            </div>
+        </div>
+
+        <script>
+            function registerAccount() {
+                let username = document.getElementById('username').value;
+                let fullname = document.getElementById('fullname').value;
+                let password = document.getElementById('password').value;
+                let confirm = document.getElementById('confirmPass').value;
+                let dob = document.getElementById('dob').value;
+                let sex = document.querySelector('input[name="sex"]:checked').value;
+                
+                if (username == "") {
+                    alert('Username Must Not Be Empty');
+                }
+
+                else if (fullname == "") {
+                    alert("Full Name Must Not Be Empty");
+                }
+
+                else if(password == "") {
+                    alert("Password Must Not Be Empty");
+                }
+
+                else if(password !== confirm) {
+                    alert("Passwords Are not Identical");
+                }  
+                
+                else {
+                    signup();
+                }
+            }
+
+            function cancel() {
+                var signupForm = document.querySelector('form[name="signup-form"]');
+                signupForm.elements['username'].value="";
+                signupForm.elements['fullname'].value="";
+                signupForm.elements['password'].value="";
+                signupForm.elements['confirmPass'].value="";
+                signupForm.elements['dob'].value="";
+                signupForm.elements['sex'].value="M";
+            }   
+
+            function signup() {
+                var signupForm = document.querySelector('form[name="signup-form"]');
+                signupForm.submit();
+            }
+        </script>
+    </body>
+</html>
