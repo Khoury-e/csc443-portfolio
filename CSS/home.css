@@ -1,0 +1,55 @@
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+#left-side {
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+#right-side {
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+
+.image-container {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    position: relative;
+    top: 30%;
+    left: 21%;
+}
+
+.image-container img {
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+    top: auto;
+    bottom: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container img:hover {
+    scale: 1.55;
+}
+
+.overview {
+    position: relative;
+    top: 10%;
+}
+
+.overview h1 {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.overview p {
+    font-size: xx-large;
+    text-align: justify;
+    padding: 20px;
+}

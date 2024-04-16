@@ -1,0 +1,15 @@
+.content {
+    margin: 70px 0 40px 20px;
+    height: 120%;
+    width: 100%;
+}
+
+.experience-info {
+    padding: 10px;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    text-decoration: underline;
+}

@@ -1,0 +1,55 @@
+.outer-image-frame {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    position: relative;
+    top: 40px;
+}
+
+.outer-image-frame-mobile {
+    float: left;
+    height: 180px;
+    width: 100px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.image-frame-mobile{
+    border: 1px dashed black;
+    width: 100%;
+    height: 100%;
+}
+
+.image-frame{
+    border: 1px dashed black;
+    width: 100%;
+    height: 100%;
+}
+
+.image-frame-mobile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-frame:hover, .image-frame-mobile:hover {
+    border: none;
+}
+
+.image-frame:hover img {
+    scale: 1.1;
+}
+
+.image-frame-mobile:hover img {
+    scale: 1.1;
+}
