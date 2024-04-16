@@ -1,5 +1,6 @@
 <html>
   <?php 
+    session_start();
     if(!isset($_SESSION['user'])) {
       echo "Must be logged in to access this page";
       die();
@@ -77,11 +78,5 @@
         </div>
       </div>
     </div>
-
-    <script>
-      function logout() {
-       
-      }
-    </script>
   </body>
 </html>
