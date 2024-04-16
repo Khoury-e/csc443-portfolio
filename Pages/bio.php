@@ -1,7 +1,7 @@
 <html>
   <?php 
     session_start();
-    if(!isset($_SESSION['user'])) {
+    if(!isset($_SESSION['user'])){
       echo "Must be Logged In to access this page";
       die();
     }
