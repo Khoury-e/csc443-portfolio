@@ -5,7 +5,6 @@
       echo "Must be Logged In to access this page";
       die();
     }
-  
   ?>
   <head>
     <link rel="stylesheet" href="../CSS/main-style.css" />
@@ -79,11 +78,5 @@
         </div>
       </div>
     </div>
-
-    <script>
-      function logout() {
-       
-      }
-    </script>
   </body>
 </html>

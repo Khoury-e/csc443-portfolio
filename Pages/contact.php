@@ -1,11 +1,10 @@
 <html>
-    <?php 
+    <?php
         session_start();
         if(!isset($_SESSION['user'])) {
         echo "Must be Logged In to access this page";
         die();
         }
-    
     ?>
     <head>
         <link rel="stylesheet" href="../CSS/main-style.css">
