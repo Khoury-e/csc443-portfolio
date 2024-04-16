@@ -79,7 +79,7 @@
                             <p>Type: Client-Server App</p>
                         </div>
                         <div class="link-to-project">
-                            <a href="../Pages/projects/qr-generator.html">More Details</a>
+                            <a href="../Pages/projects/qr-generator.php">More Details</a>
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                             <p>Type: Web App</p>
                         </div>
                         <div class="link-to-project">
-                            <a href="../Pages/projects/Moviebox.html">More Details</a>
+                            <a href="../Pages/projects/Moviebox.php">More Details</a>
                         </div>
                     </div>
                 </div>

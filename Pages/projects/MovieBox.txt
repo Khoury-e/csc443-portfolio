@@ -1,0 +1,5 @@
+../../Images/Projects/MovieBox/HomePage.png  
+../../Images/Projects/MovieBox/IT.png  
+../../Images/Projects/MovieBox/OnlinePayment.png  
+../../Images/Projects/MovieBox/PickASeat.png  
+../../Images/Projects/MovieBox/Signup.png  

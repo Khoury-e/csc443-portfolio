@@ -65,31 +65,23 @@
         <h1>Moviebox: website for a cinema</h1>
 
         <div class="gallery">
-            <div class="outer-image-frame">
-                <div class="image-frame">
-                    <a href="../../Images/Projects/Moviebox/HomePage.PNG"><img src="../../Images/Projects/Moviebox/HomePage.PNG" alt="mb2"></a>
-                </div>
-            </div>
-            <div class="outer-image-frame">
-                <div class="image-frame">
-                    <a href="../../Images/Projects/Moviebox/Signup.PNG"><img src="../../Images/Projects/Moviebox/Signup.PNG" alt="mb1"></a>
-                </div>
-            </div>
-            <div class="outer-image-frame">
-                <div class="image-frame">
-                    <a href="../../Images/Projects/Moviebox/OnlinePayment.PNG"><img src="../../Images/Projects/Moviebox/OnlinePayment.PNG" alt="mb3"></a>
-                </div>
-            </div>
-            <div class="outer-image-frame">
-                <div class="image-frame">
-                    <a href="../../Images/Projects/Moviebox/IT.PNG"><img src="../../Images/Projects/Moviebox/IT.PNG" alt="mb4"></a>
-                </div>
-            </div>
-            <div class="outer-image-frame">
-                <div class="image-frame">
-                    <a href="../../Images/Projects/Moviebox/PickASeat.PNG"><img src="../../Images/Projects/Moviebox/PickASeat.PNG" alt="mb5"></a>
-                </div>
-            </div>
+                <?php 
+                    $file = fopen("MovieBox.txt", "r");
+                    if ($file) {
+                        while (($line = fgets($file)) !== false) {
+                            echo "<div class='outer-image-frame'>";
+                            echo "<div class='image-frame'>";
+                            echo "<a href='".$line."'>";
+                            echo "<img src='".$line."'>";
+                            echo "</a>";
+                            echo "</div>";
+                            echo "</div>";
+                        }
+
+                        fclose($file);
+                    }
+                    
+                ?>
         </div>
 
         <div class="description">

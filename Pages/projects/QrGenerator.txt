@@ -1,0 +1,3 @@
+../../Images/Projects/QRGen/QR1.png
+../../Images/Projects/QRGen/QR2.png
+../../Images/Projects/QRGen/QR3.png

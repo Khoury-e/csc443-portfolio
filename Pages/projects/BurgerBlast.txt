@@ -1,7 +1,6 @@
-"../../Images/Projects/Burger Blast/home.jpg"
-"../../Images/Projects/Burger Blast/logo_transparent.png"
-"../../Images/Projects/Burger Blast/meal.jpg"
-"../../Images/Projects/Burger Blast/meal2.jpg"
-"../../Images/Projects/Burger Blast/menu.jpg"
-"../../Images/Projects/Burger Blast/sigin.jpg"
-"../../Images/Projects/Burger Blast/signup.jpg"
+../../Images/Projects/Burger Blast/home.jpg
+../../Images/Projects/Burger Blast/meal.jpg
+../../Images/Projects/Burger Blast/meal2.jpg
+../../Images/Projects/Burger Blast/menu.jpg
+../../Images/Projects/Burger Blast/signin.jpg
+../../Images/Projects/Burger Blast/signup.jpg

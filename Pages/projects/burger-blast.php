@@ -64,18 +64,23 @@
         <h1>Burger Blast</h1>
 
         <div class="gallery">
-            <?php 
-                $file = fopen("BurgerBlast.txt", "r");
-                $data =  fread($file,filesize("BurgerBlast.txt"));
-                $dataLength = count(file("BurgerBlast.txt"));
-                
+                <?php 
+                    $file = fopen("BurgerBlast.txt", "r");
+                    if ($file) {
+                        while (($line = fgets($file)) !== false) {
+                            echo "<div class='outer-image-frame-mobile'>";
+                            echo "<div class='image-frame-mobile'>";
+                            echo "<a href='".$line."'>";
+                            echo "<img src='".$line."'>";
+                            echo "</a>";
+                            echo "</div>";
+                            echo "</div>";
+                        }
 
-                for ($i=0;$i<$dataLength;$i++) {
-                    // echo the images
-                }
-
-                fclose($file);
-            ?>
+                        fclose($file);
+                    }
+                    
+                ?>
         </div>
 
         <div class="description">

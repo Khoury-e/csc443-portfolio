@@ -67,21 +67,23 @@
         <h1>QR Generator App</h1>
 
         <div class="gallery">
-            <div class="outer-image-frame">
-                <div class="image-frame">
-                    <a href="../../Images/Projects/QRGen/QR1.PNG"><img src="../../Images/Projects/QRGen/QR1.PNG" alt="qr1"></a>
-                </div>
-            </div>
-            <div class="outer-image-frame">
-                <div class="image-frame">
-                    <a href="../../Images/Projects/QRGen/QR2.PNG"><img src="../../Images/Projects/QRGen/QR2.PNG" alt="qr2"></a>
-                </div>
-            </div>
-            <div class="outer-image-frame">
-                <div class="image-frame">
-                    <a href="../../Images/Projects/QRGen/QR3.PNG"><img src="../../Images/Projects/QRGen/QR3.PNG" alt="qr3"></a>
-                </div>
-            </div>
+                <?php 
+                    $file = fopen("QrGenerator.txt", "r");
+                    if ($file) {
+                        while (($line = fgets($file)) !== false) {
+                            echo "<div class='outer-image-frame'>";
+                            echo "<div class='image-frame'>";
+                            echo "<a href='".$line."'>";
+                            echo "<img src='".$line."'>";
+                            echo "</a>";
+                            echo "</div>";
+                            echo "</div>";
+                        }
+
+                        fclose($file);
+                    }
+                    
+                ?>
         </div>
     
         <div class="description">
