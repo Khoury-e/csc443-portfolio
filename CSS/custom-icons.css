@@ -1,0 +1,43 @@
+.ico {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-size: cover;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.burger-menu-i {
+    background: url("../Images/Icons/menu-button-wide-fill.svg");
+}
+
+.mail-i {
+    background: url("../Images/Icons/mail.png");
+}
+
+.linkedin-i {
+    background: url("../Images/Icons/linkedin.svg");
+}
+
+.github-i {
+    background: url("../Images/Icons/github.svg");
+}
+
+.cv-i {
+    background: url("../Images/Icons/card-heading.svg");
+}
+
+.overview-i {
+    background: url("../Images/Icons/person.svg");
+}
+
+.proj-i {
+    background: url("../Images/Icons/file-earmark-code-fill.svg");
+}
+
+.logout-i {
+    background: url("../Images/Icons/logout.svg");
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+}

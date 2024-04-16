@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: gray;
+}
+
+#upper {
+    width: 100%;
+    height: 80%;
+}
+
+.content {
+    margin: 50px 0 40px 10px;
+    height: 150%;
+    width: 100%;
+    z-index: -1;
+}
+
+.header {
+    background-color: #4f4f4f ;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu {
+    background-color: white;
+    display: inline-block;  
+    height: inherit;
+}
+
+.menu span {
+    color: black;
+    font-size: x-large;
+    line-height: 45px;
+    padding: 5px;
+}
+
+.menu-content {
+    border: 2px solid black;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: white;
+    display: inline-block;
+    display: none;
+}
+
+.menu-content ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-content li {
+    border-bottom: 1px solid black;
+    list-style-type: none;
+    padding: 15px;
+}
+
+.menu-content li a{
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-content li span{
+    font-size: large;
+    margin: 0;
+    color: black;
+}
+
+.menu:hover .menu-content{
+    display: inline-block;
+}
+
+.menu-content li:hover {
+    background-color: lightgray;
+}
+
+.end {
+    float: right;
+    height: inherit;
+}
+
+.welcome {
+    color: black;
+    background-color: white ;
+    font-size: large;
+    height: inherit;
+    line-height: 50px;
+    float: left;
+}
+
+.welcome span {
+    padding: 15px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.logout {
+    float:left;
+}
+
+.div-left { 
+    float: left;
+}
