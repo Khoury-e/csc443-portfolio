@@ -57,7 +57,7 @@
     $add = addUser($user);
     $file = "users.json";
     if(file_put_contents("$file", $add)) {
-        header('location:../Pages/bio.html');
+        header('location:../Pages/login.html');
     } else {
         echo "Error";
     }

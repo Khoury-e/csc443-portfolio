@@ -33,7 +33,7 @@
               </li>
               <li>
                 <i class="ico overview-i"></i>
-                <a href="../Pages/contact.html">Contact Me</a>
+                <a href="../Pages/contact.php">Contact Me</a>
               </li>
             </ul>
           </div>
