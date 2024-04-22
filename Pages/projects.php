@@ -1,6 +1,7 @@
 <html>
     <?php 
     session_start();
+    require_once("header.php");
     if(!isset($_SESSION['user'])) {
         echo "Must be Logged In to access this page";
         die();
@@ -13,9 +14,6 @@
     <title>Personal Profile: Elias Khoury</title>
 </head>
 <body>
-    <?php 
-        include("header.php");
-    ?>
     <div class="content">
         <div class="projects">
                 <div class="left" id="proj1">

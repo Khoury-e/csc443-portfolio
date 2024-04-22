@@ -1,8 +1,9 @@
 <html>
   <?php 
     session_start();
-    if(!isset($_SESSION['user'])){
-      echo "Must be Logged In to access this page";
+    require_once("header.php");
+    if(!isset($_SESSION['user'])) {
+      echo "Must be logged in to access this page";
       die();
     }
   ?>
@@ -14,9 +15,6 @@
   </head>
   <body>
     <div class="wrapper">
-      <?php 
-        include('header.php');
-      ?>
       <div id="content">
         <div id="left-side">
           <div class="image-container">
