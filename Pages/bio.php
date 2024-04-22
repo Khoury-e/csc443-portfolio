@@ -1,10 +1,11 @@
 <html>
   <?php 
     session_start();
-    require_once("header.php");
     if(!isset($_SESSION['user'])) {
       echo "Must be logged in to access this page";
       die();
+    } else {
+      include("header.php");
     }
   ?>
   <head>

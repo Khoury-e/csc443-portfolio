@@ -1,11 +1,12 @@
 <html>
     <?php 
-    session_start();
-    require_once("header.php");
-    if(!isset($_SESSION['user'])) {
-        echo "Must be Logged In to access this page";
-        die();
-    }
+        session_start();
+        if(!isset($_SESSION['user'])) {
+            echo "Must be Logged In to access this page";
+            die();
+        } else {
+            include("header.php");
+        }
     ?>
 <head>
     <link rel="stylesheet" href="../CSS/main-style.css">
